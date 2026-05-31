@@ -1,0 +1,5 @@
+<div class="card-container">
+  @for (item of getFavoriteRecipes(); track $index) {
+    <recipe-recipe-component [recipe]="item" />
+  }
+</div>

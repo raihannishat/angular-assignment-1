@@ -1,0 +1,28 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background:#8d57a7;
+}
+
+.example-icon {
+  color: white;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.header-button {
+  color: #8d57a7 !important;
+  background-color: white !important;
+}
+
+.demo-section + .demo-section {
+  margin-top: 16px;
+}

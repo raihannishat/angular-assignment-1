@@ -1,0 +1,11 @@
+<mat-toolbar>
+  <span class="example-icon" routerLink="/home">{{title()}}</span>
+  <span class="example-spacer"></span>
+  <div class="nav-buttons">
+    <button routerLink="/home" matButton class="header-button">Home</button>
+    
+    <button routerLink="/favorites" matButton="elevated" matBadge="{{ getFavoriteCount() }}">
+      Favourites
+    </button>
+  </div>
+</mat-toolbar>

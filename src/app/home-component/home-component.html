@@ -1,0 +1,14 @@
+<div class="filters">
+  <button mat-button="filled" class="custom-button" (click)="recipeFilter = ''">All</button>
+  <button mat-button="filled" class="custom-button" (click)="recipeFilter = 'Breakfast'">Breakfast</button>
+  <button mat-button="filled" class="custom-button" (click)="recipeFilter = 'Lunch'">Lunch</button>
+  <button mat-button="filled" class="custom-button" (click)="recipeFilter = 'Dinner'">Dinner</button>
+  <button mat-button="filled" class="custom-button" (click)="recipeFilter = 'Snacks'">Snacks</button>
+  <button mat-button="filled" class="custom-button" (click)="recipeFilter = 'Dessert'">Dessert</button>
+</div>
+
+<div class="card-container">
+  @for (item of getFilteredRecipes(); track $index) {
+    <recipe-recipe-component [recipe]="item" (addToFavourites)="addToFavourites($event)"/>
+  }
+</div>
